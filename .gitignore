@@ -254,3 +254,6 @@ ml/artifacts/*.joblib
 # Uploaded CSVs
 backend/uploads/*
 !backend/uploads/.gitkeep
+
+# Backend secrets
+backend/.env
