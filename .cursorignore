@@ -1,0 +1,13 @@
+# Secrets — Cursor AI must never index or read these
+backend/.env
+backend/.env.*
+frontend/.env.local
+frontend/.env.*.local
+.env
+.env.*
+
+# Large data files — not useful context for the AI
+data/raw/
+data/processed/
+ml/artifacts/
+backend/uploads/
