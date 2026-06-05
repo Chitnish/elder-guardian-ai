@@ -1,0 +1,28 @@
+﻿# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+
+# Data validation
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# Database
+supabase==2.9.1
+
+# ML - Phase 1 uses only scikit-learn; others added in Phase 2
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.2.1
+joblib==1.4.2
+
+# LLM - direct SDK for Phase 1; LangGraph added in Phase 2
+anthropic==0.40.0
+
+# Alerts
+twilio==9.3.6
+resend==2.4.0
+
+# Utilities
+python-dotenv==1.0.1
+httpx==0.27.2
