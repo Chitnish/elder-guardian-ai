@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Local env files — NEVER commit these
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Local env files
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db

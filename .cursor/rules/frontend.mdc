@@ -1,0 +1,11 @@
+---
+description: Next.js 14 + TypeScript + Tailwind + shadcn/ui conventions
+globs: ["**/*.ts", "**/*.tsx"]
+alwaysApply: false
+---
+
+- TypeScript strict mode. No any; use precise types or unknown + narrowing.
+- Next.js 14 App Router only. Server Components by default; add use client only when a component needs state, effects, or browser APIs. Never use getServerSideProps / getStaticProps.
+- Initial data fetching in server components or route handlers, not useEffect.
+- UI from shadcn/ui + Tailwind utility classes. Recharts for the risk chart.
+- Every async UI action handles loading and error states explicitly.

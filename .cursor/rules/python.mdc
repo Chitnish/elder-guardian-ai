@@ -1,0 +1,12 @@
+---
+description: Python / FastAPI / ML conventions
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
+- Type hints on every function signature and return value. Assume mypy --strict.
+- Pydantic models for all FastAPI request and response bodies.
+- Wrap every external call (DB, Anthropic, Twilio, Resend, file IO) in try/except and surface a clear error. Never let exceptions bubble up as raw 500s.
+- Pin every dependency in requirements.txt (e.g. fastapi==0.115.*). No unpinned installs.
+- Pure, testable functions; side effects (network, disk) at the edges.
+- logging module in committed code, not print.

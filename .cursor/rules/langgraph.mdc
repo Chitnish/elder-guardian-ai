@@ -1,0 +1,12 @@
+---
+description: LangGraph multi-agent pipeline rules
+globs: ["backend/pipeline/**/*.py"]
+alwaysApply: false
+---
+
+- Use LangGraph StateGraph API (v0.2+). Never use deprecated AgentExecutor / initialize_agent.
+- Shared state is a single typed TypedDict; each node takes state and returns a partial state update.
+- One agent = one node = one responsibility. Order: ingestion -> features -> anomaly -> (conditional) narrative -> dispatch.
+- Conditional edges skip narrative + dispatch when risk_score <= 65.
+- Each agent is importable and unit-testable in isolation.
+- Verify any LangGraph/LangChain function exists in the installed version before using it; these APIs change often.

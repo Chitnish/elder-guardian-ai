@@ -1,0 +1,17 @@
+---
+description: Core project context and universal engineering rules for elder-guardian-ai
+alwaysApply: true
+---
+
+# Project: elder-guardian-ai
+Elder financial-exploitation early-warning web app. CSV upload -> LangGraph
+multi-agent pipeline -> risk score -> (if >65) Claude narrative + SMS + email alert.
+Stack: Next.js 14 App Router + TypeScript + Tailwind + shadcn/ui (Recharts),
+FastAPI, LangGraph, scikit-learn / PyTorch / NetworkX / SHAP,
+Supabase (Postgres + Auth), Twilio, Resend.
+
+## Always
+- Never invent or guess a library API. Check the installed package source or lockfile before using any function.
+- Every API endpoint validates input and returns a structured error (status + message). Never leave an unhandled 500.
+- Secrets in environment variables only. Never hardcode keys or write them into committed files.
+- Small, reviewable changes. One-line comment on any non-obvious decision.
