@@ -245,3 +245,12 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# ML model artifacts
+ml/artifacts/*.pkl
+ml/artifacts/*.pt
+ml/artifacts/*.joblib
+
+# Uploaded CSVs
+backend/uploads/*
+!backend/uploads/.gitkeep
