@@ -1,6 +1,7 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 
 import { AlertLog } from "@/components/dashboard/AlertLog"
@@ -47,6 +48,17 @@ export default function DashboardPage() {
       setUserId(session.user.id)
       await fetchDashboard(session.user.id)
       setIsLoading(false)
+
+      const { data: contacts } = await supabase
+        .from("emergency_contacts")
+        .select("id")
+        .eq("user_id", session.user.id)
+        .limit(1)
+
+      if (!contacts || contacts.length === 0) {
+        router.push("/onboarding")
+        return
+      }
     }
 
     void init()
@@ -70,9 +82,14 @@ export default function DashboardPage() {
       <header className="border-b bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <h1 className="text-xl font-semibold">Elder Guardian AI</h1>
-          <Button variant="outline" onClick={() => void handleSignOut()}>
-            Sign Out
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" asChild>
+              <Link href="/onboarding">Edit Contact</Link>
+            </Button>
+            <Button variant="outline" onClick={() => void handleSignOut()}>
+              Sign Out
+            </Button>
+          </div>
         </div>
       </header>
 
