@@ -4,22 +4,23 @@ from __future__ import annotations
 
 import logging
 import os
+from pathlib import Path
 from typing import TypedDict
 
 import numpy as np
 import pandas as pd
-from anthropic import Anthropic
 from dotenv import load_dotenv
+from openai import OpenAI
 from sklearn.ensemble import IsolationForest
 
-load_dotenv()
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 logger = logging.getLogger(__name__)
 
 REQUIRED_COLUMNS: tuple[str, ...] = ("date", "amount", "payee")
 RISK_THRESHOLD: float = 65.0
 NARRATIVE_UNAVAILABLE: str = (
-    "Narrative unavailable — ANTHROPIC_API_KEY not configured."
+    "Narrative unavailable - OPENAI_API_KEY not configured."
 )
 
 
@@ -92,7 +93,7 @@ def _generate_narrative(
 ) -> str:
     _ = file_path
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
         return NARRATIVE_UNAVAILABLE
 
@@ -110,13 +111,14 @@ def _generate_narrative(
     )
 
     try:
-        client = Anthropic()
-        message = client.messages.create(
-            model="claude-sonnet-4-5",
+        client = OpenAI()
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
             max_tokens=300,
             messages=[{"role": "user", "content": prompt}],
         )
-        return message.content[0].text
+        content = response.choices[0].message.content
+        return content if content is not None else NARRATIVE_UNAVAILABLE
     except Exception:
-        logger.exception("Failed to generate narrative via Anthropic API")
+        logger.exception("Failed to generate narrative via OpenAI API")
         return NARRATIVE_UNAVAILABLE

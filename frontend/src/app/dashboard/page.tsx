@@ -26,6 +26,7 @@ export default function DashboardPage() {
     try {
       const result = await getDashboard(uid)
       setDashboardData(result)
+      setError(null)
     } catch (err) {
       const message =
         err instanceof Error ? err.message : "Failed to load dashboard"
