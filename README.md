@@ -26,9 +26,7 @@ A family member uploads a CSV of an elderly person's bank transactions. A LangGr
 - **Database:** Supabase (PostgreSQL + Auth + Row Level Security)
 - **Alerts:** Resend (email)
 
-## Project Structure
 
-```\nelder-guardian-ai/\n├── backend/\n│   ├── main.py                      # FastAPI app entry point\n│   ├── routers/                     # API endpoints (auth, upload, dashboard, alerts)\n│   ├── pipeline/\n│   │   ├── orchestrator.py          # LangGraph StateGraph orchestrator\n│   │   ├── state.py                 # Shared PipelineState TypedDict\n│   │   ├── agents/                  # 5 agent modules\n│   │   │   ├── ingestion.py\n│   │   │   ├── features.py\n│   │   │   ├── anomaly.py\n│   │   │   ├── narrative.py\n│   │   │   └── dispatch.py\n│   │   └── simple_scorer.py         # Rule-based hybrid scoring helpers\n│   └── db/\n│       └── supabase_client.py\n├── frontend/\n│   └── src/\n│       ├── app/                     # Next.js App Router pages\n│       ├── components/dashboard/    # UI components\n│       ├── lib/                     # Supabase + API clients\n│       └── types/                   # TypeScript interfaces\n├── data/synthetic/                  # Demo CSV files\n└── scripts/                         # Data generation utilities\n```\n
 ## Demo Scenarios
 
 Three synthetic CSV files are included for demos:
