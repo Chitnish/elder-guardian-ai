@@ -12,7 +12,7 @@ from fastapi import APIRouter, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 
 from backend.db.supabase_client import get_client
-from backend.pipeline.simple_scorer import run_pipeline
+from backend.pipeline.orchestrator import run_pipeline
 
 logger = logging.getLogger(__name__)
 

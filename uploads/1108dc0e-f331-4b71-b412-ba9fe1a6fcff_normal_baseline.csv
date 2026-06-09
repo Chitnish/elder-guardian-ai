@@ -1,0 +1,114 @@
+date,amount,payee,category,hour_of_day
+2024-01-01,11.75,CVS Pharmacy,pharmacy,14
+2024-01-01,102.32,Electric Company,utilities,9
+2024-01-01,894.81,Sunshine Retirement Rent,housing,9
+2024-01-04,42.38,Kroger Grocery,groceries,9
+2024-01-04,130.54,Electric Company,utilities,9
+2024-01-07,894.03,Sunshine Retirement Rent,housing,9
+2024-01-08,13.11,Netflix,entertainment,20
+2024-01-08,67.36,Walgreens,pharmacy,14
+2024-01-10,175.72,Electric Company,utilities,9
+2024-01-11,16.93,Dennys Restaurant,dining,12
+2024-01-14,98.38,Kroger Grocery,groceries,11
+2024-01-14,78.12,CVS Pharmacy,pharmacy,14
+2024-01-15,81.47,Gas Company,utilities,9
+2024-01-15,12.77,Netflix,entertainment,20
+2024-01-15,92.9,Kroger Grocery,groceries,10
+2024-01-16,36.61,CVS Pharmacy,pharmacy,14
+2024-01-19,42.76,Walgreens,pharmacy,10
+2024-01-19,885.34,Sunshine Retirement Rent,housing,9
+2024-01-22,55.06,Walgreens,pharmacy,10
+2024-01-22,49.67,Walgreens,pharmacy,14
+2024-01-22,893.76,Sunshine Retirement Rent,housing,9
+2024-01-25,58.32,Kroger Grocery,groceries,9
+2024-01-25,42.03,Shell Gas Station,transport,10
+2024-01-26,36.38,Shell Gas Station,transport,11
+2024-01-26,32.69,Dennys Restaurant,dining,17
+2024-01-26,9.71,McDonalds,dining,11
+2024-01-27,156.17,Medicare Supplement,insurance,9
+2024-01-27,13.6,Netflix,entertainment,20
+2024-01-27,53.21,Walgreens,pharmacy,10
+2024-01-28,62.06,Walgreens,pharmacy,15
+2024-01-30,36.93,CVS Pharmacy,pharmacy,15
+2024-01-30,14.35,McDonalds,dining,17
+2024-01-30,94.42,Kroger Grocery,groceries,9
+2024-02-02,78.43,Gas Company,utilities,9
+2024-02-02,30.55,CVS Pharmacy,pharmacy,10
+2024-02-02,8.04,McDonalds,dining,17
+2024-02-05,162.86,Medicare Supplement,insurance,9
+2024-02-05,885.97,Sunshine Retirement Rent,housing,9
+2024-02-06,55.45,Walgreens,pharmacy,15
+2024-02-06,87.92,Kroger Grocery,groceries,10
+2024-02-07,56.36,Shell Gas Station,transport,11
+2024-02-08,167.8,Electric Company,utilities,9
+2024-02-09,17.79,McDonalds,dining,17
+2024-02-09,24.63,Walgreens,pharmacy,14
+2024-02-09,144.95,Medicare Supplement,insurance,9
+2024-02-10,151.29,Electric Company,utilities,9
+2024-02-10,893.0,Sunshine Retirement Rent,housing,9
+2024-02-10,153.54,Medicare Supplement,insurance,9
+2024-02-11,30.63,Shell Gas Station,transport,14
+2024-02-12,80.72,Electric Company,utilities,9
+2024-02-12,86.74,Electric Company,utilities,9
+2024-02-12,32.13,Shell Gas Station,transport,10
+2024-02-14,10.57,McDonalds,dining,11
+2024-02-14,14.3,Netflix,entertainment,20
+2024-02-14,17.69,McDonalds,dining,11
+2024-02-15,888.62,Sunshine Retirement Rent,housing,9
+2024-02-17,93.87,Kroger Grocery,groceries,11
+2024-02-17,14.24,CVS Pharmacy,pharmacy,15
+2024-02-19,99.16,Electric Company,utilities,9
+2024-02-20,35.89,Walgreens,pharmacy,10
+2024-02-20,41.02,CVS Pharmacy,pharmacy,15
+2024-02-21,899.99,Sunshine Retirement Rent,housing,9
+2024-02-22,45.48,Walgreens,pharmacy,14
+2024-02-23,53.17,Kroger Grocery,groceries,9
+2024-02-23,20.3,Dennys Restaurant,dining,12
+2024-02-25,159.86,Medicare Supplement,insurance,9
+2024-02-25,29.24,Walgreens,pharmacy,10
+2024-02-26,141.83,Medicare Supplement,insurance,9
+2024-02-26,44.01,Kroger Grocery,groceries,10
+2024-02-26,167.58,Medicare Supplement,insurance,9
+2024-02-27,69.59,CVS Pharmacy,pharmacy,10
+2024-02-27,12.27,Netflix,entertainment,20
+2024-02-27,17.4,Dennys Restaurant,dining,17
+2024-02-28,12.16,Netflix,entertainment,20
+2024-02-28,28.15,Dennys Restaurant,dining,17
+2024-02-28,149.49,Medicare Supplement,insurance,9
+2024-02-29,37.16,Shell Gas Station,transport,11
+2024-02-29,65.38,Walgreens,pharmacy,14
+2024-02-29,11.79,McDonalds,dining,11
+2024-03-01,15.99,Netflix,entertainment,20
+2024-03-01,47.63,CVS Pharmacy,pharmacy,15
+2024-03-03,56.43,Shell Gas Station,transport,10
+2024-03-05,47.86,Walgreens,pharmacy,15
+2024-03-05,70.58,Gas Company,utilities,9
+2024-03-08,86.59,Gas Company,utilities,9
+2024-03-08,34.83,Walgreens,pharmacy,10
+2024-03-08,144.66,Medicare Supplement,insurance,9
+2024-03-11,36.11,Shell Gas Station,transport,14
+2024-03-13,11.01,McDonalds,dining,11
+2024-03-13,54.4,CVS Pharmacy,pharmacy,14
+2024-03-13,40.28,Kroger Grocery,groceries,9
+2024-03-16,70.59,Walgreens,pharmacy,15
+2024-03-16,26.22,Dennys Restaurant,dining,11
+2024-03-17,55.92,Walgreens,pharmacy,14
+2024-03-17,14.21,Netflix,entertainment,20
+2024-03-17,18.14,Walgreens,pharmacy,14
+2024-03-18,148.21,Electric Company,utilities,9
+2024-03-18,53.4,Shell Gas Station,transport,11
+2024-03-21,84.43,Walgreens,pharmacy,10
+2024-03-21,88.22,Walgreens,pharmacy,10
+2024-03-21,15.5,Dennys Restaurant,dining,17
+2024-03-23,897.28,Sunshine Retirement Rent,housing,9
+2024-03-23,47.96,Gas Company,utilities,9
+2024-03-25,10.67,McDonalds,dining,12
+2024-03-27,102.29,Electric Company,utilities,9
+2024-03-27,21.57,Dennys Restaurant,dining,11
+2024-03-29,890.19,Sunshine Retirement Rent,housing,9
+2024-03-29,49.23,Kroger Grocery,groceries,10
+2024-03-30,41.91,Gas Company,utilities,9
+2024-03-30,51.86,Shell Gas Station,transport,11
+2024-03-30,27.12,Dennys Restaurant,dining,17
+2024-03-31,12.76,Netflix,entertainment,20
+2024-03-31,15.03,Dennys Restaurant,dining,17

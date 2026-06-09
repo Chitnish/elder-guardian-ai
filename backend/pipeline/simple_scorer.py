@@ -74,9 +74,9 @@ def run_pipeline(file_path: str, user_id: str) -> PipelineResult:
         axis=1,
     )
 
-    rule_score = _compute_rule_score(df, exploit_mask)
-    risk_score = _ensemble_score(if_score, rule_score)
-    anomalous_indices = _compute_anomalous_indices(df, exploit_mask)
+    rule_score = compute_rule_score(df, exploit_mask)
+    risk_score = ensemble_score(if_score, rule_score)
+    anomalous_indices = compute_anomalous_indices(df, exploit_mask)
 
     narrative = ""
     if risk_score > RISK_THRESHOLD:
@@ -111,7 +111,7 @@ def is_exploitation_payee(payee: str, category: str) -> bool:
     return any(keyword in combined for keyword in EXPLOITATION_KEYWORDS)
 
 
-def _compute_rule_score(df: pd.DataFrame, exploit_mask: pd.Series) -> float:
+def compute_rule_score(df: pd.DataFrame, exploit_mask: pd.Series) -> float:
     """Rule-based exploitation score from 0-100."""
     if len(df) == 0:
         return 0.0
@@ -145,7 +145,7 @@ def _compute_rule_score(df: pd.DataFrame, exploit_mask: pd.Series) -> float:
     return float(min(rule_a + rule_b + rule_c + rule_d, 100.0))
 
 
-def _ensemble_score(if_score: float, rule_score: float) -> float:
+def ensemble_score(if_score: float, rule_score: float) -> float:
     """Blend isolation-forest and rule-based scores."""
     if rule_score > 15.0:
         final_score = 0.35 * if_score + 0.65 * rule_score
@@ -155,7 +155,7 @@ def _ensemble_score(if_score: float, rule_score: float) -> float:
     return float(np.clip(final_score, 0.0, 100.0))
 
 
-def _compute_anomalous_indices(
+def compute_anomalous_indices(
     df: pd.DataFrame, exploit_mask: pd.Series
 ) -> list[int]:
     """Flag exploitation-pattern and late-night transactions."""

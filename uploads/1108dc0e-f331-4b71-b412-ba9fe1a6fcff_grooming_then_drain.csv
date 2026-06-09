@@ -1,0 +1,80 @@
+date,amount,payee,category,hour_of_day
+2024-01-01,883.94,Sunshine Retirement Rent,housing,9
+2024-01-01,76.42,CVS Pharmacy,pharmacy,14
+2024-01-01,13.26,Netflix,entertainment,20
+2024-01-04,149.28,Medicare Supplement,insurance,9
+2024-01-04,42.07,Shell Gas Station,transport,11
+2024-01-07,122.04,Electric Company,utilities,9
+2024-01-10,61.16,Walgreens,pharmacy,14
+2024-01-10,25.96,Dennys Restaurant,dining,11
+2024-01-10,54.35,Gas Company,utilities,9
+2024-01-13,886.44,Sunshine Retirement Rent,housing,9
+2024-01-13,16.11,McDonalds,dining,17
+2024-01-13,17.52,McDonalds,dining,17
+2024-01-14,29.87,CVS Pharmacy,pharmacy,15
+2024-01-14,892.39,Sunshine Retirement Rent,housing,9
+2024-01-14,147.28,Electric Company,utilities,9
+2024-01-15,43.7,Kroger Grocery,groceries,10
+2024-01-18,12.97,McDonalds,dining,17
+2024-01-21,24.89,Dennys Restaurant,dining,11
+2024-01-21,50,Michael Johnson,transfer,21
+2024-01-22,111.41,Kroger Grocery,groceries,9
+2024-01-22,19.38,Dennys Restaurant,dining,17
+2024-01-22,153.94,Medicare Supplement,insurance,9
+2024-01-23,75.11,Walgreens,pharmacy,15
+2024-01-23,169.64,Medicare Supplement,insurance,9
+2024-01-25,152.8,Medicare Supplement,insurance,9
+2024-01-25,70.77,Walgreens,pharmacy,14
+2024-01-25,11.11,McDonalds,dining,11
+2024-01-28,154.54,Medicare Supplement,insurance,9
+2024-01-28,61.99,Gas Company,utilities,9
+2024-01-29,39.59,Shell Gas Station,transport,14
+2024-01-29,19.69,CVS Pharmacy,pharmacy,10
+2024-01-29,75,Michael Johnson,transfer,22
+2024-01-31,67.98,Walgreens,pharmacy,10
+2024-01-31,23.15,Dennys Restaurant,dining,17
+2024-01-31,12.99,McDonalds,dining,11
+2024-02-02,15.78,Netflix,entertainment,20
+2024-02-02,13.52,Netflix,entertainment,20
+2024-02-04,32.07,Dennys Restaurant,dining,12
+2024-02-04,162.43,Medicare Supplement,insurance,9
+2024-02-06,61.79,Gas Company,utilities,9
+2024-02-06,100,Michael Johnson,transfer,21
+2024-02-08,893.58,Sunshine Retirement Rent,housing,9
+2024-02-08,78.04,Walgreens,pharmacy,10
+2024-02-11,112.55,Kroger Grocery,groceries,11
+2024-02-11,14.65,Netflix,entertainment,20
+2024-02-11,888.57,Sunshine Retirement Rent,housing,9
+2024-02-12,58.96,Gas Company,utilities,9
+2024-02-13,150,Michael Johnson,transfer,20
+2024-02-14,52.84,Shell Gas Station,transport,11
+2024-02-14,77.6,Gas Company,utilities,9
+2024-02-16,8.23,McDonalds,dining,17
+2024-02-17,145.01,Electric Company,utilities,9
+2024-02-17,115.97,Kroger Grocery,groceries,9
+2024-02-18,32.89,Walgreens,pharmacy,14
+2024-02-18,882.29,Sunshine Retirement Rent,housing,9
+2024-02-18,16.39,McDonalds,dining,12
+2024-02-18,200,Michael Johnson,transfer,21
+2024-02-19,15.85,Netflix,entertainment,20
+2024-02-19,87.35,Walgreens,pharmacy,10
+2024-02-19,12.1,Netflix,entertainment,20
+2024-02-22,22.93,Dennys Restaurant,dining,17
+2024-02-22,87.6,Electric Company,utilities,9
+2024-02-22,58.8,CVS Pharmacy,pharmacy,14
+2024-02-25,65.74,CVS Pharmacy,pharmacy,15
+2024-02-25,67.78,Kroger Grocery,groceries,10
+2024-02-25,887.41,Sunshine Retirement Rent,housing,9
+2024-02-26,9.27,McDonalds,dining,12
+2024-02-26,897.83,Sunshine Retirement Rent,housing,9
+2024-02-26,250,Michael Johnson,transfer,20
+2024-02-29,18.52,Dennys Restaurant,dining,17
+2024-03-01,500,MJ Investments LLC,transfer,22
+2024-03-04,750,MJ Investments LLC,transfer,22
+2024-03-05,300,Michael Johnson,transfer,22
+2024-03-06,1200,Offshore Account Transfer,transfer,22
+2024-03-09,2500,Offshore Account Transfer,transfer,23
+2024-03-13,3800,Offshore Account Transfer,transfer,23
+2024-03-15,5000,MJ Investments LLC,transfer,21
+2024-03-17,7500,Offshore Account Transfer,transfer,22
+2024-03-21,10000,MJ Investments LLC,transfer,23
